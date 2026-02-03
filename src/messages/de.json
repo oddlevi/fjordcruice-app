@@ -75,11 +75,15 @@
     "bookExternal": "Diese Tour buchen"
   },
   "contact": {
-    "title": "Kontakt",
-    "description": "Haben Sie Fragen? Kontaktieren Sie unser Team.",
-    "email": "E-Mail",
-    "phone": "Telefon",
-    "address": "Adresse"
+    "title": "So finden und kontaktieren Sie uns",
+    "description": "Wir freuen uns von Ihnen zu hören. Erreichen Sie uns per Telefon, E-Mail oder besuchen Sie uns in Tromsø.",
+    "email": "E-Mail schreiben",
+    "phone": "Anrufen",
+    "phoneOnboard": "An Bord",
+    "phoneGroup": "Gruppenreisen oder Notfall",
+    "address": "Adresse",
+    "addressDock": "Schiffsanleger",
+    "addressOffice": "Landbüro"
   },
   "privacy": {
     "title": "Datenschutzerklärung",

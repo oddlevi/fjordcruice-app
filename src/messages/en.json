@@ -75,11 +75,15 @@
     "bookExternal": "Book this tour"
   },
   "contact": {
-    "title": "Contact Us",
-    "description": "Have questions? Get in touch with our team.",
-    "email": "Email",
-    "phone": "Phone",
-    "address": "Address"
+    "title": "How to Find and Contact Us",
+    "description": "We'd love to hear from you. Reach us by phone, email, or visit us in Tromsø.",
+    "email": "Write an Email",
+    "phone": "Call Us",
+    "phoneOnboard": "Onboard",
+    "phoneGroup": "Group travel or emergency",
+    "address": "Address",
+    "addressDock": "Ships dock",
+    "addressOffice": "Land office"
   },
   "privacy": {
     "title": "Privacy Policy",

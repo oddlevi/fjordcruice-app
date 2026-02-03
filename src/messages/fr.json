@@ -75,11 +75,15 @@
     "bookExternal": "Réserver cette excursion"
   },
   "contact": {
-    "title": "Contact",
-    "description": "Des questions? Contactez notre équipe.",
-    "email": "E-mail",
-    "phone": "Téléphone",
-    "address": "Adresse"
+    "title": "Comment nous trouver et nous contacter",
+    "description": "Nous serions ravis de vous entendre. Contactez-nous par téléphone, e-mail ou rendez-nous visite à Tromsø.",
+    "email": "Écrire un e-mail",
+    "phone": "Appelez-nous",
+    "phoneOnboard": "À bord",
+    "phoneGroup": "Voyage de groupe ou urgence",
+    "address": "Adresse",
+    "addressDock": "Quai des navires",
+    "addressOffice": "Bureau terrestre"
   },
   "privacy": {
     "title": "Politique de confidentialité",
