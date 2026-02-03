@@ -1,0 +1,138 @@
+{
+  "common": {
+    "siteName": "Norwegian Fjordcruice",
+    "loading": "Laden...",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.",
+    "back": "Zurück",
+    "bookNow": "Jetzt buchen",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "language": "Sprache",
+    "from": "ab",
+    "hours": "Stunden",
+    "perPerson": "pro Person"
+  },
+  "nav": {
+    "home": "Startseite",
+    "tours": "Touren",
+    "contact": "Kontakt",
+    "privacy": "Datenschutz",
+    "calendar": "Kalender"
+  },
+  "home": {
+    "hero": "Finden Sie Ihre perfekte Fjordkreuzfahrt",
+    "subtitle": "Erzählen Sie uns, wonach Sie suchen, und unser KI-Berater empfiehlt das ideale norwegische Fjorderlebnis für Sie.",
+    "startButton": "Empfehlung erhalten"
+  },
+  "ai": {
+    "title": "Fjordkreuzfahrt-Berater",
+    "placeholder": "Fragen Sie über Fjordkreuzfahrten...",
+    "send": "Senden",
+    "thinking": "Denke nach...",
+    "messagesLeft": "{count} Nachrichten übrig",
+    "sessionEnded": "Sitzung beendet. Starten Sie eine neue Empfehlung für weitere Hilfe.",
+    "fallbackTitle": "Unsere Top-Empfehlungen",
+    "fallbackDescription": "Unser KI-Berater ist derzeit nicht verfügbar. Hier sind unsere beliebtesten Touren:",
+    "startOver": "Präferenzen ändern",
+    "followUp": "Haben Sie Fragen zu diesen Touren? Fragen Sie!"
+  },
+  "preferences": {
+    "title": "Ihre Präferenzen",
+    "duration": "Reisedauer",
+    "durationShort": "Kurz (1-2 Std.)",
+    "durationHalf": "Halber Tag (3-5 Std.)",
+    "durationFull": "Ganzer Tag (6-8 Std.)",
+    "durationMulti": "Mehrtägig",
+    "interests": "Interessen",
+    "budget": "Budget",
+    "budgetLow": "Günstig",
+    "budgetMid": "Mittel",
+    "budgetHigh": "Premium",
+    "groupType": "Gruppentyp",
+    "groupSolo": "Allein",
+    "groupCouple": "Paar",
+    "groupFamily": "Familie",
+    "groupGroup": "Gruppe",
+    "fitness": "Fitnesslevel",
+    "fitnessEasy": "Einfach",
+    "fitnessMod": "Mittel",
+    "fitnessHard": "Anspruchsvoll",
+    "month": "Reisemonat",
+    "submit": "Meine Empfehlung erhalten"
+  },
+  "tours": {
+    "title": "Alle Touren",
+    "subtitle": "Entdecken Sie unsere Auswahl an norwegischen Fjordkreuzfahrten",
+    "filter": "Filtern",
+    "sort": "Sortieren nach",
+    "noResults": "Keine Touren entsprechen Ihren Filtern.",
+    "duration": "Dauer",
+    "difficulty": "Schwierigkeit",
+    "season": "Saison",
+    "highlights": "Höhepunkte",
+    "included": "Inklusive",
+    "meetingPoint": "Treffpunkt",
+    "bookExternal": "Diese Tour buchen"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Haben Sie Fragen? Kontaktieren Sie unser Team.",
+    "email": "E-Mail",
+    "phone": "Telefon",
+    "address": "Adresse"
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "intro": "Wir respektieren Ihre Privatsphäre. Diese Seite erklärt, wie wir Ihre Daten verarbeiten."
+  },
+  "dayPlan": {
+    "yourPlan": "Ihr Tagesplan",
+    "title": "Ein Tag in Tromsø — {month}",
+    "subtitle": "Basierend auf Ihren Präferenzen empfehlen wir diese Touren für Ihren perfekten Tag.",
+    "included": "Inklusive",
+    "bookTour": "Tour buchen",
+    "tipTitle": "Zwischen den Touren",
+    "tipText": "Erkunden Sie Tromsøs charmantes Stadtzentrum, besuchen Sie die Eismeerkathedrale oder wärmen Sie sich in einem der gemütlichen Cafés am Hafen auf.",
+    "changePreferences": "Präferenzen ändern",
+    "months": {
+      "january": "Januar", "february": "Februar", "march": "März",
+      "april": "April", "may": "Mai", "june": "Juni",
+      "july": "Juli", "august": "August", "september": "September",
+      "october": "Oktober", "november": "November", "december": "Dezember"
+    }
+  },
+  "calendar": {
+    "title": "Wochenkalender",
+    "prevWeek": "Vorherige Woche",
+    "nextWeek": "Nächste Woche",
+    "today": "Heute",
+    "noTours": "Keine Touren",
+    "person": "Person",
+    "persons": "Personen",
+    "selectedTours": "Ausgewählte Touren",
+    "total": "Gesamt",
+    "clearSelection": "Auswahl löschen",
+    "days": {
+      "monday": "Montag",
+      "tuesday": "Dienstag",
+      "wednesday": "Mittwoch",
+      "thursday": "Donnerstag",
+      "friday": "Freitag",
+      "saturday": "Samstag",
+      "sunday": "Sonntag",
+      "mondayShort": "Mo",
+      "tuesdayShort": "Di",
+      "wednesdayShort": "Mi",
+      "thursdayShort": "Do",
+      "fridayShort": "Fr",
+      "saturdayShort": "Sa",
+      "sundayShort": "So"
+    }
+  },
+  "cookie": {
+    "message": "Wir verwenden Cookies für wesentliche Funktionen. Analytics sind cookiefrei über Plausible.",
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen",
+    "settings": "Cookie-Einstellungen"
+  }
+}

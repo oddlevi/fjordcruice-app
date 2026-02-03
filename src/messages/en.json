@@ -1,0 +1,138 @@
+{
+  "common": {
+    "siteName": "Norwegian Fjordcruice",
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "back": "Back",
+    "bookNow": "Book now",
+    "contact": "Contact us",
+    "privacy": "Privacy Policy",
+    "language": "Language",
+    "from": "from",
+    "hours": "hours",
+    "perPerson": "per person"
+  },
+  "nav": {
+    "home": "Home",
+    "tours": "Tours",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "calendar": "Calendar"
+  },
+  "home": {
+    "hero": "Find Your Perfect Fjord Cruise",
+    "subtitle": "Tell us what you're looking for and our AI advisor will recommend the ideal Norwegian fjord experience for you.",
+    "startButton": "Get Recommendation"
+  },
+  "ai": {
+    "title": "Fjord Cruise Advisor",
+    "placeholder": "Ask about fjord cruises...",
+    "send": "Send",
+    "thinking": "Thinking...",
+    "messagesLeft": "{count} messages left",
+    "sessionEnded": "Session ended. Start a new recommendation for more help.",
+    "fallbackTitle": "Our Top Recommendations",
+    "fallbackDescription": "Our AI advisor is currently unavailable. Here are our most popular tours:",
+    "startOver": "Change preferences",
+    "followUp": "Have questions about these tours? Ask away!"
+  },
+  "preferences": {
+    "title": "Your Preferences",
+    "duration": "Trip Duration",
+    "durationShort": "Short (1-2h)",
+    "durationHalf": "Half day (3-5h)",
+    "durationFull": "Full day (6-8h)",
+    "durationMulti": "Multi-day",
+    "interests": "Interests",
+    "budget": "Budget",
+    "budgetLow": "Budget-friendly",
+    "budgetMid": "Moderate",
+    "budgetHigh": "Premium",
+    "groupType": "Group Type",
+    "groupSolo": "Solo",
+    "groupCouple": "Couple",
+    "groupFamily": "Family",
+    "groupGroup": "Group",
+    "fitness": "Fitness Level",
+    "fitnessEasy": "Easy",
+    "fitnessMod": "Moderate",
+    "fitnessHard": "Challenging",
+    "month": "Travel Month",
+    "submit": "Get My Recommendation"
+  },
+  "tours": {
+    "title": "All Tours",
+    "subtitle": "Explore our selection of Norwegian fjord cruises",
+    "filter": "Filter",
+    "sort": "Sort by",
+    "noResults": "No tours match your filters.",
+    "duration": "Duration",
+    "difficulty": "Difficulty",
+    "season": "Season",
+    "highlights": "Highlights",
+    "included": "What's included",
+    "meetingPoint": "Meeting point",
+    "bookExternal": "Book this tour"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Have questions? Get in touch with our team.",
+    "email": "Email",
+    "phone": "Phone",
+    "address": "Address"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "We respect your privacy. This page explains how we handle your data."
+  },
+  "dayPlan": {
+    "yourPlan": "Your Day Plan",
+    "title": "A Day in Tromsø — {month}",
+    "subtitle": "Based on your preferences, here are the tours we recommend for your perfect day.",
+    "included": "Included",
+    "bookTour": "Book this tour",
+    "tipTitle": "Between tours",
+    "tipText": "Explore Tromsø's charming city centre, visit the iconic Arctic Cathedral, or warm up with a coffee at one of the cozy cafés along the harbour.",
+    "changePreferences": "Change preferences",
+    "months": {
+      "january": "January", "february": "February", "march": "March",
+      "april": "April", "may": "May", "june": "June",
+      "july": "July", "august": "August", "september": "September",
+      "october": "October", "november": "November", "december": "December"
+    }
+  },
+  "calendar": {
+    "title": "Weekly Activity Calendar",
+    "prevWeek": "Previous week",
+    "nextWeek": "Next week",
+    "today": "Today",
+    "noTours": "No tours",
+    "person": "Person",
+    "persons": "Persons",
+    "selectedTours": "Selected tours",
+    "total": "Total",
+    "clearSelection": "Clear selection",
+    "days": {
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "mondayShort": "Mon",
+      "tuesdayShort": "Tue",
+      "wednesdayShort": "Wed",
+      "thursdayShort": "Thu",
+      "fridayShort": "Fri",
+      "saturdayShort": "Sat",
+      "sundayShort": "Sun"
+    }
+  },
+  "cookie": {
+    "message": "We use cookies for essential site functionality. Analytics are cookie-free via Plausible.",
+    "accept": "Accept",
+    "decline": "Decline",
+    "settings": "Cookie Settings"
+  }
+}

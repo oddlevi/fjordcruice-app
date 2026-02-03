@@ -1,0 +1,138 @@
+{
+  "common": {
+    "siteName": "Norwegian Fjordcruice",
+    "loading": "Chargement...",
+    "error": "Une erreur s'est produite. Veuillez réessayer.",
+    "back": "Retour",
+    "bookNow": "Réserver",
+    "contact": "Nous contacter",
+    "privacy": "Confidentialité",
+    "language": "Langue",
+    "from": "à partir de",
+    "hours": "heures",
+    "perPerson": "par personne"
+  },
+  "nav": {
+    "home": "Accueil",
+    "tours": "Excursions",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "calendar": "Calendrier"
+  },
+  "home": {
+    "hero": "Trouvez votre croisière fjord idéale",
+    "subtitle": "Dites-nous ce que vous recherchez et notre conseiller IA vous recommandera l'expérience fjord norvégienne idéale.",
+    "startButton": "Obtenir une recommandation"
+  },
+  "ai": {
+    "title": "Conseiller Croisière Fjord",
+    "placeholder": "Posez vos questions sur les croisières fjord...",
+    "send": "Envoyer",
+    "thinking": "Réflexion...",
+    "messagesLeft": "{count} messages restants",
+    "sessionEnded": "Session terminée. Démarrez une nouvelle recommandation pour plus d'aide.",
+    "fallbackTitle": "Nos meilleures recommandations",
+    "fallbackDescription": "Notre conseiller IA est actuellement indisponible. Voici nos excursions les plus populaires:",
+    "startOver": "Modifier les préférences",
+    "followUp": "Des questions sur ces excursions ? Demandez !"
+  },
+  "preferences": {
+    "title": "Vos préférences",
+    "duration": "Durée du voyage",
+    "durationShort": "Court (1-2h)",
+    "durationHalf": "Demi-journée (3-5h)",
+    "durationFull": "Journée complète (6-8h)",
+    "durationMulti": "Plusieurs jours",
+    "interests": "Intérêts",
+    "budget": "Budget",
+    "budgetLow": "Économique",
+    "budgetMid": "Modéré",
+    "budgetHigh": "Premium",
+    "groupType": "Type de groupe",
+    "groupSolo": "Solo",
+    "groupCouple": "Couple",
+    "groupFamily": "Famille",
+    "groupGroup": "Groupe",
+    "fitness": "Niveau de forme",
+    "fitnessEasy": "Facile",
+    "fitnessMod": "Modéré",
+    "fitnessHard": "Exigeant",
+    "month": "Mois de voyage",
+    "submit": "Obtenir ma recommandation"
+  },
+  "tours": {
+    "title": "Toutes les excursions",
+    "subtitle": "Explorez notre sélection de croisières fjord norvégiennes",
+    "filter": "Filtrer",
+    "sort": "Trier par",
+    "noResults": "Aucune excursion ne correspond à vos filtres.",
+    "duration": "Durée",
+    "difficulty": "Difficulté",
+    "season": "Saison",
+    "highlights": "Points forts",
+    "included": "Inclus",
+    "meetingPoint": "Point de rencontre",
+    "bookExternal": "Réserver cette excursion"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Des questions? Contactez notre équipe.",
+    "email": "E-mail",
+    "phone": "Téléphone",
+    "address": "Adresse"
+  },
+  "privacy": {
+    "title": "Politique de confidentialité",
+    "intro": "Nous respectons votre vie privée. Cette page explique comment nous traitons vos données."
+  },
+  "dayPlan": {
+    "yourPlan": "Votre plan de journée",
+    "title": "Une journée à Tromsø — {month}",
+    "subtitle": "Selon vos préférences, voici les excursions que nous recommandons pour votre journée idéale.",
+    "included": "Inclus",
+    "bookTour": "Réserver cette excursion",
+    "tipTitle": "Entre les excursions",
+    "tipText": "Explorez le charmant centre-ville de Tromsø, visitez la cathédrale arctique ou réchauffez-vous dans l'un des cafés du port.",
+    "changePreferences": "Modifier les préférences",
+    "months": {
+      "january": "Janvier", "february": "Février", "march": "Mars",
+      "april": "Avril", "may": "Mai", "june": "Juin",
+      "july": "Juillet", "august": "Août", "september": "Septembre",
+      "october": "Octobre", "november": "Novembre", "december": "Décembre"
+    }
+  },
+  "calendar": {
+    "title": "Calendrier hebdomadaire",
+    "prevWeek": "Semaine précédente",
+    "nextWeek": "Semaine suivante",
+    "today": "Aujourd'hui",
+    "noTours": "Aucune excursion",
+    "person": "Personne",
+    "persons": "Personnes",
+    "selectedTours": "Excursions sélectionnées",
+    "total": "Total",
+    "clearSelection": "Effacer la sélection",
+    "days": {
+      "monday": "Lundi",
+      "tuesday": "Mardi",
+      "wednesday": "Mercredi",
+      "thursday": "Jeudi",
+      "friday": "Vendredi",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "mondayShort": "Lun",
+      "tuesdayShort": "Mar",
+      "wednesdayShort": "Mer",
+      "thursdayShort": "Jeu",
+      "fridayShort": "Ven",
+      "saturdayShort": "Sam",
+      "sundayShort": "Dim"
+    }
+  },
+  "cookie": {
+    "message": "Nous utilisons des cookies essentiels. Les analytics sont sans cookies via Plausible.",
+    "accept": "Accepter",
+    "decline": "Refuser",
+    "settings": "Paramètres cookies"
+  }
+}
