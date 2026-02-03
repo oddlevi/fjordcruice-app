@@ -1,5 +1,5 @@
 import { useTranslations } from "next-intl";
-import { AiChat } from "@/components/AiChat";
+import { AiChatLazy } from "@/components/AiChatLazy";
 
 export default function HomePage() {
   const t = useTranslations("home");
@@ -12,7 +12,7 @@ export default function HomePage() {
           {t("subtitle")}
         </p>
       </div>
-      <AiChat />
+      <AiChatLazy />
     </div>
   );
 }
