@@ -2,10 +2,17 @@ import { NextRequest, NextResponse } from "next/server";
 import { getSupabase } from "@/lib/supabase";
 import { mockCategories } from "@/lib/mock-data";
 import { supportedLanguages, type SupportedLanguage } from "@/lib/validation";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 const USE_MOCK = !process.env.NEXT_PUBLIC_SUPABASE_URL;
 
 export async function GET(request: NextRequest) {
+  const ip = getClientIp(request);
+  const { success } = rateLimit(`categories:${ip}`, 60, 60 * 1000);
+  if (!success) {
+    return NextResponse.json({ error: "Too many requests." }, { status: 429 });
+  }
+
   const lang = request.nextUrl.searchParams.get("lang") as SupportedLanguage;
 
   if (!lang || !supportedLanguages.includes(lang)) {

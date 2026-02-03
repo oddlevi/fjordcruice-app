@@ -1,8 +1,15 @@
 import { NextRequest, NextResponse } from "next/server";
 import { getTours } from "@/lib/tours";
 import { toursQuerySchema } from "@/lib/validation";
+import { rateLimit, getClientIp } from "@/lib/rate-limit";
 
 export async function GET(request: NextRequest) {
+  const ip = getClientIp(request);
+  const { success } = rateLimit(`tours:${ip}`, 60, 60 * 1000);
+  if (!success) {
+    return NextResponse.json({ error: "Too many requests." }, { status: 429 });
+  }
+
   const params = Object.fromEntries(request.nextUrl.searchParams);
 
   const parsed = toursQuerySchema.safeParse(params);
