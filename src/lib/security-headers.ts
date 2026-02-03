@@ -12,9 +12,9 @@ const securityHeaders: Record<string, string> = {
   "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
   "Content-Security-Policy": [
     "default-src 'self'",
-    "script-src 'self' plausible.io",
+    "script-src 'self' 'unsafe-inline' 'unsafe-eval' plausible.io",
     "style-src 'self' 'unsafe-inline'",
-    `img-src 'self' ${SUPABASE_URL} data:`,
+    `img-src 'self' ${SUPABASE_URL} cdn.prod.website-files.com data:`,
     `connect-src 'self' ${SUPABASE_URL} plausible.io`,
     "font-src 'self'",
     "frame-ancestors 'none'",
