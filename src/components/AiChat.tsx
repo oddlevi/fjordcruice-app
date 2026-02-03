@@ -7,7 +7,7 @@ import { useTranslations, useLocale } from "next-intl";
 import ReactMarkdown from "react-markdown";
 import { PreferenceForm } from "./PreferenceForm";
 import { DayPlan, type DayPlanData } from "./DayPlan";
-import { MAX_MESSAGES_PER_SESSION } from "@/lib/claude";
+import { MAX_MESSAGES_PER_SESSION } from "@/lib/constants";
 
 function getMessageText(msg: UIMessage): string {
   return msg.parts

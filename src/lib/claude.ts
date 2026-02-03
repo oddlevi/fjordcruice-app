@@ -1,15 +1,11 @@
 import { createAnthropic } from "@ai-sdk/anthropic";
+export { MAX_MESSAGE_LENGTH, MAX_MESSAGES_PER_SESSION, MAX_RESPONSE_LENGTH, AI_TIMEOUT_MS } from "./constants";
 
 export const anthropic = createAnthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
 });
 
 export const AI_MODEL = "claude-3-5-sonnet-20241022";
-
-export const MAX_MESSAGE_LENGTH = 500;
-export const MAX_MESSAGES_PER_SESSION = 10;
-export const MAX_RESPONSE_LENGTH = 2000;
-export const AI_TIMEOUT_MS = 30_000;
 
 interface TourForPrompt {
   slug: string;
