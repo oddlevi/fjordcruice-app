@@ -96,6 +96,7 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
   const [personCount, setPersonCount] = useState(1);
 
   // Load saved selection from sessionStorage on mount
+  // This is a valid use of setState in effect - restoring persisted state after hydration
   useEffect(() => {
     // If initialDate is provided (from preference form), clear old selections and use the new date
     if (initialDate) {
@@ -109,6 +110,7 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
       try {
         const data = JSON.parse(stored);
         if (data.selectedKeys && Array.isArray(data.selectedKeys)) {
+          // eslint-disable-next-line react-hooks/set-state-in-effect
           setSelectedKeys(new Set(data.selectedKeys));
 
           // Navigate to the week of the first selected date
@@ -222,7 +224,7 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
           {/* Header row with day names */}
           <div className="flex border-b border-slate-200">
             <div className="w-16 shrink-0" /> {/* Time column header */}
-            {weekDays.map((date, i) => (
+            {weekDays.map((date) => (
               <div
                 key={date.toISOString()}
                 className={`flex-1 border-l border-slate-200 px-2 py-3 text-center ${
@@ -336,7 +338,7 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
       {/* Mobile: Simplified list view */}
       <div className="mt-6 md:hidden">
         <div className="flex gap-1 overflow-x-auto pb-2">
-          {weekDays.map((date, i) => (
+          {weekDays.map((date) => (
             <MobileDayButton
               key={date.toISOString()}
               date={date}

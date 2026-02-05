@@ -27,11 +27,6 @@ const interestOptions = [
   "nightlife",
 ];
 
-const months = [
-  "January", "February", "March", "April", "May", "June",
-  "July", "August", "September", "October", "November", "December",
-];
-
 export function PreferenceForm({ onSubmit, loading }: PreferenceFormProps) {
   const t = useTranslations("preferences");
   const [preferences, setPreferences] = useState<Preferences>({

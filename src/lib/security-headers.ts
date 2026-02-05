@@ -1,8 +1,6 @@
 import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL ?? "";
-const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN ?? "";
 
 const securityHeaders: Record<string, string> = {
   "X-Content-Type-Options": "nosniff",

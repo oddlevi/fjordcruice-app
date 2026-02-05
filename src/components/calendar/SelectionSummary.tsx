@@ -1,7 +1,6 @@
 "use client";
 
 import { useTranslations, useLocale } from "next-intl";
-import { useRouter } from "next/navigation";
 import type { Tour } from "@/lib/tours";
 import {
   downloadICS,
@@ -27,7 +26,6 @@ export function SelectionSummary({
 }: SelectionSummaryProps) {
   const t = useTranslations("calendar");
   const locale = useLocale();
-  const router = useRouter();
 
   if (selectedTours.length === 0) return null;
 

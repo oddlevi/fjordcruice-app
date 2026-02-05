@@ -5,12 +5,16 @@ import { useTranslations } from "next-intl";
 
 export function CookieBanner() {
   const t = useTranslations("cookie");
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState<boolean | null>(null);
 
   useEffect(() => {
     const consent = localStorage.getItem("cookie-consent");
-    if (!consent) setVisible(true);
+    // eslint-disable-next-line react-hooks/set-state-in-effect
+    setVisible(!consent);
   }, []);
+
+  // Don't render until we've checked localStorage (avoid hydration mismatch)
+  if (visible === null) return null;
 
   function accept() {
     localStorage.setItem("cookie-consent", "accepted");

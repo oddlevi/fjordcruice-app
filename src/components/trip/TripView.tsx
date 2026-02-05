@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState, useMemo } from "react";
-import { useTranslations, useLocale } from "next-intl";
+import { useLocale } from "next-intl";
 import { Link } from "@/i18n/routing";
 import type { Tour } from "@/lib/tours";
 import {
@@ -66,16 +66,16 @@ function formatDate(date: Date, locale: string): string {
 }
 
 export function TripView({ allTours }: TripViewProps) {
-  const t = useTranslations("trip");
   const locale = useLocale();
   const [tripData, setTripData] = useState<StoredTripData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  // Load trip data from localStorage
+  // Load trip data from sessionStorage (valid hydration pattern)
   useEffect(() => {
     const stored = sessionStorage.getItem("fjordcruice-trip-selection");
     if (stored) {
       try {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setTripData(JSON.parse(stored));
       } catch {
         setTripData(null);
@@ -139,15 +139,16 @@ export function TripView({ allTours }: TripViewProps) {
     return grouped;
   }, [selectedTours]);
 
-  // Build trip plan for PDF
+  // Build trip plan for PDF (use stable ID based on content)
   const tripPlan: TripPlan | null = useMemo(() => {
     if (!tripData || selectedTours.length === 0) return null;
 
     const dates = selectedTours.map((t) => t.dateStr).sort();
+    const stableId = `trip-${dates.join("-")}-${tripData.personCount}`;
     return {
-      id: `trip-${Date.now()}`,
-      createdAt: new Date().toISOString(),
-      updatedAt: new Date().toISOString(),
+      id: stableId,
+      createdAt: dates[0],
+      updatedAt: dates[0],
       startDate: dates[0],
       endDate: dates[dates.length - 1],
       personCount: tripData.personCount,

@@ -1,12 +1,11 @@
 "use client";
 
-import { useTranslations, useLocale } from "next-intl";
+import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/routing";
 import type { Tour } from "@/lib/tours";
 
 export function TourCard({ tour }: { tour: Tour }) {
   const t = useTranslations();
-  const locale = useLocale();
 
   return (
     <Link
