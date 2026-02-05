@@ -21,7 +21,7 @@ export interface TripPlan {
   tours: PlannedTour[];
 }
 
-const STORAGE_KEY = "fjordcruice-trip-plan";
+const STORAGE_KEY = "arctic-expeditions-trip-plan";
 
 // Generate unique ID
 function generateId(): string {
@@ -89,15 +89,15 @@ export function generateICS(plan: TripPlan): string {
   const lines: string[] = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Fjordcruice//Trip Planner//EN",
+    "PRODID:-//Arctic Expeditions//Trip Planner//EN",
     "CALSCALE:GREGORIAN",
     "METHOD:PUBLISH",
-    "X-WR-CALNAME:Fjordcruice Trip",
+    "X-WR-CALNAME:Arctic Expeditions Trip",
   ];
 
   for (const tour of plan.tours) {
     const startDate = tour.date.replace(/-/g, "");
-    const uid = `${tour.tourSlug}-${tour.date}@fjordcruice.com`;
+    const uid = `${tour.tourSlug}-${tour.date}@arctic-expeditions.com`;
 
     // Use durationHours directly
     const durationHours = tour.durationHours || 3;
@@ -114,7 +114,7 @@ export function generateICS(plan: TripPlan): string {
       `DTSTART:${startDate}T${startTime}`,
       `DTEND:${startDate}T${endTime}`,
       `SUMMARY:${escapeICS(tour.tourName)}`,
-      `DESCRIPTION:Fjord cruise - ${durationHours} hours - ${tour.price} NOK per person`,
+      `DESCRIPTION:Arctic expedition - ${durationHours} hours - ${tour.price} NOK per person`,
       "END:VEVENT"
     );
   }
@@ -138,7 +138,7 @@ export function downloadICS(plan: TripPlan): void {
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = `fjordcruice-trip-${plan.startDate}.ics`;
+  link.download = `arctic-expeditions-trip-${plan.startDate}.ics`;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -306,9 +306,9 @@ export function downloadPDF(plan: TripPlan, tourDetails: Map<string, Tour>): voi
   doc.setTextColor(255, 255, 255);
   doc.setFontSize(32);
   doc.setFont("helvetica", "bold");
-  doc.text("NORWEGIAN", margin, 35);
+  doc.text("ARCTIC", margin, 35);
   doc.setFontSize(28);
-  doc.text("FJORDCRUICE", margin, 50);
+  doc.text("EXPEDITIONS", margin, 50);
 
   // Decorative line
   doc.setDrawColor(59, 130, 246); // Blue-500
@@ -626,7 +626,7 @@ export function downloadPDF(plan: TripPlan, tourDetails: Map<string, Tour>): voi
   doc.setFont("helvetica", "normal");
   doc.setFontSize(9);
   doc.setTextColor(21, 128, 61); // Green-700
-  doc.text("1. Visit fjordcruice-app.vercel.app to book your tours online", margin + 10, y + 22);
+  doc.text("1. Visit arctic-expeditions.vercel.app to book your tours online", margin + 10, y + 22);
   doc.text("2. Or contact us directly for group bookings and special requests", margin + 10, y + 30);
   doc.text("3. Remember to bring warm clothes and your camera!", margin + 10, y + 38);
 
@@ -637,7 +637,7 @@ export function downloadPDF(plan: TripPlan, tourDetails: Map<string, Tour>): voi
     doc.setFontSize(8);
     doc.setTextColor(148, 163, 184);
     doc.text(
-      `Norwegian Fjordcruice • fjordcruice-app.vercel.app • Page ${i} of ${totalPages}`,
+      `Arctic Expeditions • arctic-expeditions.vercel.app • Page ${i} of ${totalPages}`,
       pageWidth / 2,
       pageHeight - 10,
       { align: "center" }
@@ -645,5 +645,5 @@ export function downloadPDF(plan: TripPlan, tourDetails: Map<string, Tour>): voi
   }
 
   // Download
-  doc.save(`fjordcruice-trip-${plan.startDate}.pdf`);
+  doc.save(`arctic-expeditions-trip-${plan.startDate}.pdf`);
 }

@@ -19,7 +19,7 @@ export function Header() {
     <header className="border-b border-slate-200 bg-white">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-4">
         <Link href="/" className="text-xl font-bold text-blue-900">
-          Norwegian Fjordcruice
+          Arctic Expeditions
         </Link>
         <nav className="flex items-center gap-6">
           {links.map((link) => (

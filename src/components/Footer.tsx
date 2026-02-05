@@ -17,7 +17,7 @@ export function Footer() {
             {t("common.contact")}
           </Link>
         </div>
-        <p>&copy; {new Date().getFullYear()} Norwegian Fjordcruice. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Arctic Expeditions. All rights reserved.</p>
       </div>
     </footer>
   );

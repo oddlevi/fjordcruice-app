@@ -100,12 +100,12 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
   useEffect(() => {
     // If initialDate is provided (from preference form), clear old selections and use the new date
     if (initialDate) {
-      sessionStorage.removeItem("fjordcruice-trip-selection");
+      sessionStorage.removeItem("arctic-expeditions-trip-selection");
       return;
     }
 
     // Otherwise, try to restore from sessionStorage
-    const stored = sessionStorage.getItem("fjordcruice-trip-selection");
+    const stored = sessionStorage.getItem("arctic-expeditions-trip-selection");
     if (stored) {
       try {
         const data = JSON.parse(stored);
@@ -139,7 +139,7 @@ export function TimelineCalendar({ tours, initialDate }: TimelineCalendarProps) 
         selectedKeys: Array.from(selectedKeys),
         personCount,
       };
-      sessionStorage.setItem("fjordcruice-trip-selection", JSON.stringify(tripSelection));
+      sessionStorage.setItem("arctic-expeditions-trip-selection", JSON.stringify(tripSelection));
     }
   }, [selectedKeys, personCount]);
 

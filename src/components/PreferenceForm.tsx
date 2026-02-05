@@ -19,7 +19,7 @@ interface PreferenceFormProps {
 }
 
 const interestOptions = [
-  "fjord",
+  "arctic",
   "northern-lights",
   "food",
   "culture",

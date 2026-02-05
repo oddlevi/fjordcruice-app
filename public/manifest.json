@@ -1,7 +1,7 @@
 {
-  "name": "Fjordcruice - Turplanlegger",
-  "short_name": "Fjordcruice",
-  "description": "Plan your perfect fjord cruise experience in Norway",
+  "name": "Arctic Expeditions - Trip Planner",
+  "short_name": "Arctic Expeditions",
+  "description": "Plan your perfect Arctic expedition experience in Tromsø, Norway",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

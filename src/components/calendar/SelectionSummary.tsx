@@ -72,7 +72,7 @@ export function SelectionSummary({
       selectedKeys: Array.from(selectedKeys),
       personCount,
     };
-    sessionStorage.setItem("fjordcruice-trip-selection", JSON.stringify(tripSelection));
+    sessionStorage.setItem("arctic-expeditions-trip-selection", JSON.stringify(tripSelection));
 
     // Open trip page in new tab
     window.open(`/${locale}/trip`, "_blank");

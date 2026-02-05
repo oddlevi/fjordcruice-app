@@ -72,7 +72,7 @@ export function TripView({ allTours }: TripViewProps) {
 
   // Load trip data from sessionStorage (valid hydration pattern)
   useEffect(() => {
-    const stored = sessionStorage.getItem("fjordcruice-trip-selection");
+    const stored = sessionStorage.getItem("arctic-expeditions-trip-selection");
     if (stored) {
       try {
         // eslint-disable-next-line react-hooks/set-state-in-effect

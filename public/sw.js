@@ -1,5 +1,5 @@
-// Service Worker for Fjordcruice PWA
-const CACHE_NAME = 'fjordcruice-v1';
+// Service Worker for Arctic Expeditions PWA
+const CACHE_NAME = 'arctic-expeditions-v1';
 const OFFLINE_URL = '/offline';
 
 // Assets to cache on install

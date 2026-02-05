@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Norwegian Fjordcruice",
+    "siteName": "Arctic Expeditions",
     "loading": "Cargando...",
     "error": "Algo salió mal. Por favor, inténtelo de nuevo.",
     "back": "Volver",
@@ -20,13 +20,13 @@
     "calendar": "Calendario"
   },
   "home": {
-    "hero": "Encuentra tu crucero por los fiordos ideal",
-    "subtitle": "Cuéntanos lo que buscas y nuestro asesor IA te recomendará la experiencia ideal en los fiordos noruegos.",
+    "hero": "Encuentra tu expedición ártica ideal",
+    "subtitle": "Cuéntanos lo que buscas y nuestro asesor IA te recomendará la experiencia ártica ideal.",
     "startButton": "Obtener recomendación"
   },
   "ai": {
-    "title": "Asesor de Cruceros por los Fiordos",
-    "placeholder": "Pregunta sobre cruceros por los fiordos...",
+    "title": "Asesor de Expediciones Árticas",
+    "placeholder": "Pregunta sobre expediciones árticas...",
     "send": "Enviar",
     "thinking": "Pensando...",
     "messagesLeft": "{count} mensajes restantes",
@@ -64,7 +64,7 @@
   },
   "tours": {
     "title": "Todas las excursiones",
-    "subtitle": "Explora nuestra selección de cruceros por los fiordos noruegos",
+    "subtitle": "Explora nuestra selección de expediciones árticas",
     "filter": "Filtrar",
     "sort": "Ordenar por",
     "noResults": "Ninguna excursión coincide con tus filtros.",

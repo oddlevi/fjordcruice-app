@@ -316,7 +316,7 @@ export const mockTranslations: Record<string, Record<string, { name: string; des
 };
 
 export const mockCategories = [
-  { id: "cat-001", slug: "fjord", translations: { en: "Fjord Cruise", de: "Fjordkreuzfahrt", fr: "Croisière Fjord", es: "Crucero Fiordo" } },
+  { id: "cat-001", slug: "arctic", translations: { en: "Arctic Expedition", de: "Arktis-Expedition", fr: "Expédition Arctique", es: "Expedición Ártica" } },
   { id: "cat-002", slug: "northern-lights", translations: { en: "Northern Lights", de: "Nordlichter", fr: "Aurores Boréales", es: "Aurora Boreal" } },
   { id: "cat-003", slug: "food", translations: { en: "Food & Dining", de: "Essen & Trinken", fr: "Gastronomie", es: "Gastronomía" } },
   { id: "cat-004", slug: "culture", translations: { en: "Culture", de: "Kultur", fr: "Culture", es: "Cultura" } },
@@ -325,11 +325,11 @@ export const mockCategories = [
 ];
 
 export const mockTourCategories: Record<string, string[]> = {
-  "arctic-king-crab-cruise": ["fjord", "food", "wildlife"],
-  "classic-arctic-fjord-cruise": ["fjord", "food", "culture"],
-  "northern-lights-fjord-cruise": ["fjord", "northern-lights", "food"],
-  "midday-arctic-explorer": ["fjord", "culture"],
-  "evening-polar-expedition": ["fjord", "northern-lights", "nightlife"],
-  "jazz-cruise": ["fjord", "culture", "food", "nightlife"],
+  "arctic-king-crab-cruise": ["arctic", "food", "wildlife"],
+  "classic-arctic-fjord-cruise": ["arctic", "food", "culture"],
+  "northern-lights-fjord-cruise": ["arctic", "northern-lights", "food"],
+  "midday-arctic-explorer": ["arctic", "culture"],
+  "evening-polar-expedition": ["arctic", "northern-lights", "nightlife"],
+  "jazz-cruise": ["arctic", "culture", "food", "nightlife"],
   "captains-secret-bars": ["nightlife", "food", "culture"],
 };

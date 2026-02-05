@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Norwegian Fjordcruice",
+    "siteName": "Arctic Expeditions",
     "loading": "Loading...",
     "error": "Something went wrong. Please try again.",
     "back": "Back",
@@ -20,13 +20,13 @@
     "calendar": "Calendar"
   },
   "home": {
-    "hero": "Find Your Perfect Fjord Cruise",
-    "subtitle": "Tell us what you're looking for and we'll recommend the ideal Norwegian fjord experience for you.",
+    "hero": "Find Your Perfect Arctic Adventure",
+    "subtitle": "Tell us what you're looking for and we'll recommend the ideal Arctic expedition experience for you.",
     "startButton": "Get Recommendation"
   },
   "ai": {
-    "title": "Fjord Cruise Advisor",
-    "placeholder": "Ask about fjord cruises...",
+    "title": "Arctic Expedition Advisor",
+    "placeholder": "Ask about Arctic expeditions...",
     "send": "Send",
     "thinking": "Thinking...",
     "messagesLeft": "{count} messages left",
@@ -64,7 +64,7 @@
   },
   "tours": {
     "title": "All Tours",
-    "subtitle": "Explore our selection of Norwegian fjord cruises",
+    "subtitle": "Explore our selection of Arctic expeditions",
     "filter": "Filter",
     "sort": "Sort by",
     "noResults": "No tours match your filters.",
@@ -109,7 +109,7 @@
   },
   "calendar": {
     "pageTitle": "Plan Your Perfect Tour & Activities in Tromsø",
-    "pageSubtitle": "Discover what to do between our fjord cruises",
+    "pageSubtitle": "Discover what to do between our Arctic expeditions",
     "title": "Weekly Activity Calendar",
     "prevWeek": "Previous week",
     "nextWeek": "Next week",

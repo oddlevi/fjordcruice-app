@@ -10,15 +10,15 @@ import { CookieBanner } from "@/components/CookieBanner";
 import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
-  title: "Norwegian Fjordcruice - Find Your Perfect Fjord Cruise",
+  title: "Arctic Expeditions - Find Your Perfect Arctic Adventure",
   description:
-    "AI-powered fjord cruise recommendations. Discover the best Norwegian fjord experiences tailored to your preferences.",
+    "AI-powered Arctic expedition recommendations. Discover the best Tromsø experiences tailored to your preferences.",
   manifest: "/manifest.json",
   themeColor: "#1e40af",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Fjordcruice",
+    title: "Arctic Expeditions",
   },
   formatDetection: {
     telephone: false,

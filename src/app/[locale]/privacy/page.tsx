@@ -11,7 +11,7 @@ export default function PrivacyPage() {
       <div className="prose prose-slate max-w-none">
         <h2>Data We Collect</h2>
         <p>
-          We collect minimal data to provide our service. Our AI cruise advisor
+          We collect minimal data to provide our service. Our AI expedition advisor
           processes your preferences (trip duration, interests, budget, group type,
           fitness level, travel month) to generate personalized recommendations.
           This data is not stored after your session ends.
@@ -36,7 +36,7 @@ export default function PrivacyPage() {
           Under GDPR, you have the right to access, correct, and delete your
           personal data. Since we do not store personal data beyond your browser
           session, there is typically no data to delete. For any privacy-related
-          inquiries, contact us at privacy@fjordcruice.no.
+          inquiries, contact us at privacy@arctic-expeditions.no.
         </p>
 
         <h2>Data Retention</h2>

@@ -1,6 +1,6 @@
 {
   "common": {
-    "siteName": "Norwegian Fjordcruice",
+    "siteName": "Arctic Expeditions",
     "loading": "Chargement...",
     "error": "Une erreur s'est produite. Veuillez réessayer.",
     "back": "Retour",
@@ -20,13 +20,13 @@
     "calendar": "Calendrier"
   },
   "home": {
-    "hero": "Trouvez votre croisière fjord idéale",
-    "subtitle": "Dites-nous ce que vous recherchez et notre conseiller IA vous recommandera l'expérience fjord norvégienne idéale.",
+    "hero": "Trouvez votre expédition arctique idéale",
+    "subtitle": "Dites-nous ce que vous recherchez et notre conseiller IA vous recommandera l'expérience arctique idéale.",
     "startButton": "Obtenir une recommandation"
   },
   "ai": {
-    "title": "Conseiller Croisière Fjord",
-    "placeholder": "Posez vos questions sur les croisières fjord...",
+    "title": "Conseiller Expéditions Arctiques",
+    "placeholder": "Posez vos questions sur les expéditions arctiques...",
     "send": "Envoyer",
     "thinking": "Réflexion...",
     "messagesLeft": "{count} messages restants",
@@ -64,7 +64,7 @@
   },
   "tours": {
     "title": "Toutes les excursions",
-    "subtitle": "Explorez notre sélection de croisières fjord norvégiennes",
+    "subtitle": "Explorez notre sélection d'expéditions arctiques",
     "filter": "Filtrer",
     "sort": "Trier par",
     "noResults": "Aucune excursion ne correspond à vos filtres.",
