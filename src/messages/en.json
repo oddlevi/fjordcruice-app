@@ -21,7 +21,7 @@
   },
   "home": {
     "hero": "Find Your Perfect Fjord Cruise",
-    "subtitle": "Tell us what you're looking for and our AI advisor will recommend the ideal Norwegian fjord experience for you.",
+    "subtitle": "Tell us what you're looking for and we'll recommend the ideal Norwegian fjord experience for you.",
     "startButton": "Get Recommendation"
   },
   "ai": {
@@ -58,6 +58,8 @@
     "fitnessMod": "Moderate",
     "fitnessHard": "Challenging",
     "month": "Travel Month",
+    "startDate": "Start Date",
+    "selectDateRequired": "Please select a start date to continue",
     "submit": "Get My Recommendation"
   },
   "tours": {
@@ -106,6 +108,8 @@
     }
   },
   "calendar": {
+    "pageTitle": "Plan Your Perfect Tour & Activities in Tromsø",
+    "pageSubtitle": "Discover what to do between our fjord cruises",
     "title": "Weekly Activity Calendar",
     "prevWeek": "Previous week",
     "nextWeek": "Next week",
@@ -116,6 +120,9 @@
     "selectedTours": "Selected tours",
     "total": "Total",
     "clearSelection": "Clear selection",
+    "exportCalendar": "Add to Calendar",
+    "downloadPDF": "Download Your Tour",
+    "viewTripWithRecommendations": "View My Trip with Activity Tips",
     "days": {
       "monday": "Monday",
       "tuesday": "Tuesday",
@@ -138,5 +145,26 @@
     "accept": "Accept",
     "decline": "Decline",
     "settings": "Cookie Settings"
+  },
+  "trip": {
+    "title": "Your Tromsø Adventure",
+    "noTrip": "No Trip Selected",
+    "noTripDescription": "Please go to the calendar and select some tours first.",
+    "goToCalendar": "Go to Calendar",
+    "downloadPDF": "Download PDF",
+    "addToCalendar": "Add to Calendar",
+    "editSelection": "Edit Selection",
+    "travelers": "Travelers",
+    "tours": "Tours",
+    "total": "Total",
+    "meetingPoint": "Meeting Point",
+    "freeTime": "free time",
+    "thingsToDoNearby": "Things to do nearby",
+    "moreToExplore": "More to explore after your tours",
+    "readyToBook": "Ready to book?",
+    "totalFor": "Total for",
+    "person": "person",
+    "people": "people",
+    "downloadTripPlan": "Download Trip Plan"
   }
 }

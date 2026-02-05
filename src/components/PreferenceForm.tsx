@@ -10,6 +10,7 @@ interface Preferences {
   group_type: string;
   fitness_level: string;
   travel_month: number;
+  start_date: string;
 }
 
 interface PreferenceFormProps {
@@ -39,8 +40,10 @@ export function PreferenceForm({ onSubmit, loading }: PreferenceFormProps) {
     budget: "moderate",
     group_type: "couple",
     fitness_level: "easy",
-    travel_month: 7,
+    travel_month: new Date().getMonth() + 1,
+    start_date: "",
   });
+  const [dateError, setDateError] = useState(false);
 
   function toggleInterest(interest: string) {
     setPreferences((prev) => ({
@@ -57,6 +60,10 @@ export function PreferenceForm({ onSubmit, loading }: PreferenceFormProps) {
     <form
       onSubmit={(e) => {
         e.preventDefault();
+        if (!preferences.start_date) {
+          setDateError(true);
+          return;
+        }
         onSubmit(preferences);
       }}
       className="space-y-6"
@@ -196,24 +203,26 @@ export function PreferenceForm({ onSubmit, loading }: PreferenceFormProps) {
         </div>
       </div>
 
-      {/* Month */}
+      {/* Start Date */}
       <div>
         <label className="mb-2 block text-sm font-medium text-slate-700">
-          {t("month")}
+          {t("startDate")} <span className="text-red-500">*</span>
         </label>
-        <select
-          value={preferences.travel_month}
-          onChange={(e) =>
-            setPreferences((p) => ({ ...p, travel_month: Number(e.target.value) }))
-          }
-          className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm"
-        >
-          {months.map((month, i) => (
-            <option key={i + 1} value={i + 1}>
-              {month}
-            </option>
-          ))}
-        </select>
+        <input
+          type="date"
+          value={preferences.start_date}
+          min={new Date().toISOString().split("T")[0]}
+          onChange={(e) => {
+            setPreferences((p) => ({ ...p, start_date: e.target.value }));
+            setDateError(false);
+          }}
+          className={`w-full rounded-lg border px-3 py-2 text-sm ${
+            dateError ? "border-red-500 bg-red-50" : "border-slate-200"
+          }`}
+        />
+        {dateError && (
+          <p className="mt-1 text-sm text-red-500">{t("selectDateRequired")}</p>
+        )}
       </div>
 
       <button

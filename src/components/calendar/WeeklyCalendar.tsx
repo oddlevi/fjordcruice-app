@@ -29,12 +29,27 @@ const DAY_KEYS = [
   "sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday",
 ] as const;
 
-export function WeeklyCalendar({ tours }: { tours: Tour[] }) {
+interface WeeklyCalendarProps {
+  tours: Tour[];
+  initialDate?: string;
+}
+
+export function WeeklyCalendar({ tours, initialDate }: WeeklyCalendarProps) {
   const t = useTranslations("calendar");
   const today = useMemo(() => new Date(), []);
-  const [weekStart, setWeekStart] = useState(() => getMonday(today));
+
+  // Parse initial date or use today
+  const startDate = useMemo(() => {
+    if (initialDate) {
+      const parsed = new Date(initialDate);
+      if (!isNaN(parsed.getTime())) return parsed;
+    }
+    return today;
+  }, [initialDate, today]);
+
+  const [weekStart, setWeekStart] = useState(() => getMonday(startDate));
   const [selectedDayIndex, setSelectedDayIndex] = useState(() => {
-    const dayOfWeek = today.getDay();
+    const dayOfWeek = startDate.getDay();
     return dayOfWeek === 0 ? 6 : dayOfWeek - 1;
   });
   // Keys are "YYYY-MM-DD:slug" so each day's tour is independent
@@ -101,6 +116,16 @@ export function WeeklyCalendar({ tours }: { tours: Tour[] }) {
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-8">
+      {/* Page header */}
+      <div className="mb-8 text-center">
+        <h1 className="text-3xl font-bold text-slate-900 md:text-4xl">
+          {t("pageTitle")}
+        </h1>
+        <p className="mt-2 text-lg text-slate-600">
+          {t("pageSubtitle")}
+        </p>
+      </div>
+
       <WeekNavigation
         weekStart={weekStart}
         onPrevWeek={handlePrevWeek}
@@ -156,6 +181,7 @@ export function WeeklyCalendar({ tours }: { tours: Tour[] }) {
       {/* Selection summary */}
       <SelectionSummary
         selectedTours={selectedTours}
+        selectedKeys={selectedKeys}
         personCount={personCount}
         onPersonCountChange={setPersonCount}
         onClear={() => setSelectedKeys(new Set())}

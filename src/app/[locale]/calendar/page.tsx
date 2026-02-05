@@ -1,11 +1,16 @@
 import { getLocale } from "next-intl/server";
 import { getTours } from "@/lib/tours";
-import { WeeklyCalendar } from "@/components/calendar/WeeklyCalendar";
+import { TimelineCalendar } from "@/components/calendar/TimelineCalendar";
 import type { SupportedLanguage } from "@/lib/validation";
 
-export default async function CalendarPage() {
+interface CalendarPageProps {
+  searchParams: Promise<{ date?: string }>;
+}
+
+export default async function CalendarPage({ searchParams }: CalendarPageProps) {
   const locale = (await getLocale()) as SupportedLanguage;
   const tours = await getTours(locale);
+  const { date } = await searchParams;
 
-  return <WeeklyCalendar tours={tours} />;
+  return <TimelineCalendar tours={tours} initialDate={date} />;
 }

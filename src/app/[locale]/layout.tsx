@@ -7,11 +7,31 @@ import "../globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { CookieBanner } from "@/components/CookieBanner";
+import { ServiceWorkerRegistration } from "@/components/ServiceWorkerRegistration";
 
 export const metadata: Metadata = {
   title: "Norwegian Fjordcruice - Find Your Perfect Fjord Cruise",
   description:
     "AI-powered fjord cruise recommendations. Discover the best Norwegian fjord experiences tailored to your preferences.",
+  manifest: "/manifest.json",
+  themeColor: "#1e40af",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Fjordcruice",
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    icon: [
+      { url: "/icons/icon-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/icons/icon-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/icons/icon-152x152.png", sizes: "152x152", type: "image/png" },
+    ],
+  },
 };
 
 export default async function LocaleLayout({
@@ -33,6 +53,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased">
         <NextIntlClientProvider messages={messages}>
+          <ServiceWorkerRegistration />
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />

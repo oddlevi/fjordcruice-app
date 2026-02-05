@@ -58,6 +58,8 @@
     "fitnessMod": "Moderado",
     "fitnessHard": "Exigente",
     "month": "Mes de viaje",
+    "startDate": "Fecha de inicio",
+    "selectDateRequired": "Por favor, selecciona una fecha de inicio para continuar",
     "submit": "Obtener mi recomendación"
   },
   "tours": {
@@ -106,6 +108,8 @@
     }
   },
   "calendar": {
+    "pageTitle": "Planifica tu excursión en Tromsø",
+    "pageSubtitle": "Selecciona tus actividades y construye tu itinerario perfecto",
     "title": "Calendario semanal",
     "prevWeek": "Semana anterior",
     "nextWeek": "Semana siguiente",
@@ -116,6 +120,8 @@
     "selectedTours": "Excursiones seleccionadas",
     "total": "Total",
     "clearSelection": "Borrar selección",
+    "exportCalendar": "Añadir al calendario",
+    "downloadPDF": "Descargar tu tour",
     "days": {
       "monday": "Lunes",
       "tuesday": "Martes",

@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport, type UIMessage } from "ai";
 import { useTranslations, useLocale } from "next-intl";
+import { useRouter } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import { PreferenceForm } from "./PreferenceForm";
 import { DayPlan, type DayPlanData } from "./DayPlan";
@@ -19,6 +20,7 @@ function getMessageText(msg: UIMessage): string {
 export function AiChat() {
   const t = useTranslations("ai");
   const locale = useLocale();
+  const router = useRouter();
   const [phase, setPhase] = useState<"preferences" | "loading" | "result">("preferences");
   const [sessionId] = useState(() => crypto.randomUUID());
   const [inputValue, setInputValue] = useState("");
@@ -49,48 +51,11 @@ export function AiChat() {
     group_type: string;
     fitness_level: string;
     travel_month: number;
+    start_date: string;
   }) {
-    setPhase("loading");
-
-    try {
-      const res = await fetch("/api/ai/recommend", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ language: locale, preferences }),
-      });
-
-      const contentType = res.headers.get("content-type") ?? "";
-
-      // Structured plan JSON (fallback or future AI structured output)
-      if (contentType.includes("application/json")) {
-        const data = await res.json();
-        if (data.type === "plan") {
-          setPlanData(data as DayPlanData);
-          setPhase("result");
-          return;
-        }
-      }
-
-      // Streaming AI text response
-      const reader = res.body?.getReader();
-      if (!reader) return;
-
-      let fullText = "";
-      const decoder = new TextDecoder();
-      while (true) {
-        const { done, value } = await reader.read();
-        if (done) break;
-        fullText += decoder.decode(value, { stream: true });
-      }
-
-      if (fullText) {
-        setStreamedMarkdown(fullText);
-        setPhase("result");
-      }
-    } catch {
-      setStreamedMarkdown(t("fallbackDescription"));
-      setPhase("result");
-    }
+    // Navigate directly to calendar with the selected date
+    const dateParam = preferences.start_date ? `?date=${preferences.start_date}` : "";
+    router.push(`/${locale}/calendar${dateParam}`);
   }
 
   function handleSend(e: React.FormEvent) {

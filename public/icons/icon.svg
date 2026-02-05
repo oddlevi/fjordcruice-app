@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background with gradient -->
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3a5f"/>
+      <stop offset="100%" style="stop-color:#1e40af"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="mountain" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#64748b"/>
+      <stop offset="100%" style="stop-color:#475569"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="512" height="512" rx="96" fill="url(#sky)"/>
+
+  <!-- Mountains (fjords) -->
+  <path d="M0 320 L80 200 L160 280 L240 160 L320 240 L400 180 L480 260 L512 220 L512 512 L0 512 Z" fill="url(#mountain)" opacity="0.6"/>
+  <path d="M0 360 L100 260 L180 320 L280 220 L360 300 L440 240 L512 280 L512 512 L0 512 Z" fill="url(#mountain)" opacity="0.8"/>
+
+  <!-- Water/fjord -->
+  <path d="M0 380 L512 380 L512 512 L0 512 Z" fill="url(#water)"/>
+
+  <!-- Simple boat/ship -->
+  <g transform="translate(180, 340)">
+    <!-- Hull -->
+    <path d="M0 40 Q75 60 150 40 L140 20 L10 20 Z" fill="white"/>
+    <!-- Cabin -->
+    <rect x="50" y="0" width="50" height="20" rx="4" fill="white"/>
+    <!-- Mast/flag -->
+    <rect x="72" y="-30" width="4" height="30" fill="white"/>
+    <path d="M76 -30 L100 -20 L76 -10 Z" fill="#ef4444"/>
+  </g>
+
+  <!-- Waves -->
+  <path d="M0 420 Q64 410 128 420 T256 420 T384 420 T512 420" stroke="white" stroke-width="3" fill="none" opacity="0.4"/>
+  <path d="M0 440 Q64 430 128 440 T256 440 T384 440 T512 440" stroke="white" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>
